@@ -1,0 +1,21 @@
+#Current date and time
+
+import datetime
+
+#Get current date and time
+
+now=datetime.datetime.now()
+
+#Create a log message
+
+log_message=f"Log entry created at{now}: This is log message"
+
+#open the file in append mode
+
+with open("demo.txt","a")as file:
+    #write a log message to the file
+    file.write(log_message +"\n")
+
+    #print a message
+
+    print("log entry has been written to log files")
